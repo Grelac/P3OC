@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: 'roboto', sans-serif;
+}
+
+
+/* (((( page index ))) */
+
+/* (( header )) */
+
+.logo-index {
+
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    
+}
+
+.logo-index img {
+    
+    width: 50%;
+}
+
+.localisation {
+
+    display: flex;
+    justify-content: space-around;
+    background-color: #EAEAEA;
+
+}
+
+.localisation i {
+
+   padding-left: -15px;
+   padding-right: 15px;
+}
+
+.présentation {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F6F6F6;
+
+}
+
+.texte-présentation p {
+    display: flex;
+    justify-content: center;
+}
+
+.titre-présentation p {
+
+    font-size: large;
+    font-weight: 900;
+}
+
+.description-présentation p {
+
+    font-weight: 300;
+    margin: 0;
+}
+
+.bouton-explorer {
+
+    background-color: #9356DC;
+    box-shadow: 5px 5px 20px 10px  #FF79DA inset;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    
+   
+}
+
+.bouton-explorer p {
+
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* (((( pages menu ))) */
+
+/* (( header )) */
+
+.nav-et-logo {
+
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.logo-menu {
+
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: -20px;
+}
+
+.logo-menu img {
+    
+    width: 50%;
+
+}
+
+.fa-solid {
+
+   padding-top: 20px;
+   padding-left: 20px;
+   font-size: 20px;
+}
+
+.image-restaurant img {
+
+    width: 100%;
+  
+    object-fit: cover;
+}
+
