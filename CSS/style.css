@@ -284,3 +284,43 @@ body {
 
     object-fit: cover;
 }
+
+/* (((( Footer Toutes les pages ))))  */
+
+.footer {
+
+    background-color: #353535 ;
+    padding-bottom: 30px;
+
+}
+
+.footer p {
+
+    color: white;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.logo-titre-footer {
+
+    font-family: 'Shrikhand';
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-top: 15px;
+}
+
+.footer-nav p {
+
+    font-weight: 400;
+    font-size: 1em;
+
+}
+
+.footer-nav i {
+
+    font-size: 0.8em;
+    margin-right: 15px;
+}
