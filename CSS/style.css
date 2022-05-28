@@ -1,4 +1,5 @@
 body {
+
     margin: 0;
     font-family: 'roboto', sans-serif;
 }
@@ -13,6 +14,8 @@ body {
     display: flex;
     justify-content: center;
     padding: 15px;
+    padding-top: 25px ;
+    box-shadow: 0px 4px 15px #cbcbcb;
     
 }
 
@@ -26,14 +29,16 @@ body {
     display: flex;
     justify-content: space-around;
     background-color: #EAEAEA;
-
+    border-top: solid 1px #cbcbcb;
+    
 }
 
 .localisation i {
 
-   padding-left: -15px;
    padding-right: 15px;
+
 }
+
 
 .présentation {
 
@@ -41,34 +46,49 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     background-color: #F6F6F6;
-
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 40px;
+    
 }
 
 .texte-présentation p {
+
     display: flex;
     justify-content: center;
-}
-
-.titre-présentation p {
-
-    font-size: large;
+    font-size: 1.5em;
     font-weight: 900;
+    margin: 0;
+   
 }
 
+.titre-présentation {
+    
+    margin-bottom: 20px;
+}
+
+.description-présentation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
 .description-présentation p {
 
+    font-size: 1em;
     font-weight: 300;
     margin: 0;
 }
 
 .bouton-explorer {
 
-    background-color: #9356DC;
-    box-shadow: 5px 5px 20px 10px  #FF79DA inset;
+    background: linear-gradient(#FF79DA, #9356DC); 
     border-radius: 30px;
     margin-top: 30px;
     margin-bottom: 60px;
-    
+    box-shadow: 0px 4px 15px gray;
+    padding-left: 5px;
+    padding-right: 5px;
    
 }
 
@@ -78,6 +98,78 @@ body {
     margin-left: 15px;
     margin-right: 15px;
 }
+
+/* (( main )) */
+
+/* ( fonctionnement) */
+
+.titre-fonctionnement {
+
+    font-weight: 900;
+    font-size: 1.5em;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.section-fonctionnement {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+
+.card-fonctionnement {
+
+    display: flex;
+   background-color: #F6F6F6;
+   width: 100%;
+   border-radius: 20px;
+   margin-left: 30px;
+   margin-right: 30px;
+   margin-top: 15px;
+   margin-bottom: 10px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   box-shadow: 0px 4px 15px #cbcbcb;
+    
+}
+
+.texte-fonctionnement {
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.nombre-fonctionnement {
+
+    color: white;
+    background-color: #9356DC;
+    border-radius: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: -10px;
+    
+}
+
+.texte-fonctionnement i {
+
+    color: gray;
+    padding-top: 18px;
+    font-size: 1.5rem;
+    padding-left: 20px;
+}
+
+.texte-bouton-fonctionnement {
+
+    font-weight: 700;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
 
 /* (((( pages menu ))) */
 
@@ -105,7 +197,7 @@ body {
 
 }
 
-.fa-solid {
+.nav-header i {
 
    padding-top: 20px;
    padding-left: 20px;
