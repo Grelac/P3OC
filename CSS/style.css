@@ -114,6 +114,12 @@ main a {
 
 }
 
+.bouton-explorer:hover {
+
+    background: linear-gradient(rgb(250, 160, 224), #9459dc);
+    box-shadow: 0px 4px 20px rgb(118, 118, 118);
+}
+
 .bouton-explorer p {
 
     color: white;
@@ -158,12 +164,29 @@ main a {
 
 }
 
+.card-fonctionnement:hover {
+
+    background-color: #F5EDFF;
+    box-shadow: 0px 4px 15px #b8b6b6; 
+    
+}
+
+.card-fonctionnement:hover i {
+
+    color: #9356DC;
+}
+
+.card-fonctionnement:hover .texte-bouton-fonctionnement{
+
+    color: black;
+}
+
 .texte-fonctionnement {
 
     display: flex;
     justify-content: space-between;
-
 }
+
 
 .nombre-fonctionnement {
 
@@ -185,6 +208,8 @@ main a {
     font-size: 1.4rem;
     padding-left: 25px;
 }
+
+
 
 .texte-bouton-fonctionnement {
 
