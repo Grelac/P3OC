@@ -18,7 +18,7 @@ header a,
 main a {
 
     color: black;
-    
+
 }
 
 .footer-nav a {
@@ -161,14 +161,15 @@ main a {
     padding-bottom: 5px;
     box-shadow: 0px 4px 15px #cbcbcb;
     max-width: 330px;
+    cursor: pointer;
 
 }
 
 .card-fonctionnement:hover {
 
     background-color: #F5EDFF;
-    box-shadow: 0px 4px 15px #b8b6b6; 
-    
+    box-shadow: 0px 4px 15px #b8b6b6;
+
 }
 
 .card-fonctionnement:hover i {
@@ -176,7 +177,7 @@ main a {
     color: #9356DC;
 }
 
-.card-fonctionnement:hover .texte-bouton-fonctionnement{
+.card-fonctionnement:hover .texte-bouton-fonctionnement {
 
     color: black;
 }
@@ -218,12 +219,31 @@ main a {
     padding-left: 25px;
 }
 
+/* ((loader)) */
+
+.loader {
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 2em;
+    color: #9356DC;
+    opacity: 0;
+    margin-top: 30px;
+    animation: loader 2s;
+
+}
+
+
 /* (( section restaurant )) */
+
 
 .section-restaurant {
 
     background-color: #F6F6F6;
     margin-top: 50px;
+
+   
 }
 
 .titre-section-restaurant {
@@ -242,6 +262,8 @@ main a {
     flex-wrap: wrap;
     justify-content: center;
     padding: 15px;
+    margin-top: -60px;
+    animation: card-restaurant 3s;
 
 }
 
@@ -290,6 +312,12 @@ main a {
     margin-top: 20px;
 }
 
+.fa-heart:hover {
+
+    color: rgb(171, 220, 40);
+    transition: color 0.35s ease-in-out;
+}
+
 
 /* (((( pages menu ))) */
 
@@ -309,12 +337,12 @@ main a {
     justify-content: center;
     padding-top: 15px;
     padding-bottom: 15px;
-    
+
 }
 
 .logo-menu img {
 
-    
+
     width: 50%;
     margin-left: -65px;
 
@@ -457,6 +485,13 @@ main a {
     margin-bottom: 60px;
     box-shadow: 0px 4px 15px gray;
 
+}
+
+.bouton-commander:hover {
+
+    background: linear-gradient(rgb(250, 160, 224), #9459dc);
+    box-shadow: 0px 4px 20px rgb(118, 118, 118);
+    cursor: pointer;
 
 }
 
@@ -503,4 +538,44 @@ main a {
 
     font-size: 0.8em;
     margin-right: 15px;
+}
+
+/* (((( animation css )))) */
+
+@keyframes loader {
+
+    from {
+
+        transform: rotate(0deg);
+        opacity: 1;
+        
+    }
+
+    to {
+
+        transform: rotate(360deg);
+        visibility: hidden;
+        
+    }
+
+
+}
+
+
+@keyframes card-restaurant {
+
+    from {
+
+        opacity: 0;
+        margin-top: 100px;
+       
+    }
+
+    to {
+
+        margin-top: none;
+        opacity: 1;
+        
+    }
+
 }
