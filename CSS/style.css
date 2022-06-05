@@ -505,8 +505,6 @@ main a {
 .menu {
 
     margin-top: 0;
-    padding-left: 15px;
-    padding-right: 15px;
 
 }
 
@@ -565,8 +563,14 @@ main a {
     margin-top: 15px;
     border-radius: 15px;
     box-shadow: 0px 1px 15px #cbcbcb;
+    gap: 2%;
 
 
+}
+
+.card-menu-restaurant:hover {
+
+    cursor: pointer;
 }
 
 
@@ -577,7 +581,7 @@ main a {
 }
 
 
-@media (max-width: 434px) {
+@media (max-width: 550px) {
 
     .card-menu-restaurant p {
 
@@ -600,8 +604,44 @@ main a {
 
     max-width: 30px;
     padding-top: 25px;
+    padding-left: -70px;
+    
+  
   
 }
+
+
+
+.card-menu-restaurant:hover .validation-animation {
+
+    visibility: 1; 
+    width: 120px; 
+    background-color: #99E2D0;
+    margin: -5px; 
+    border-radius: 0 15px 15px 0;
+    animation: validation 2s;
+
+
+}
+
+.validation { 
+
+    display: flex;
+    justify-content: center;
+    color: white;  
+    font-size: 1.8em;
+    margin-top: 18px;
+
+}
+
+.card-menu-restaurant:hover .validation {
+
+   
+    animation: validation-rotation 1s;
+    
+
+}
+
 
 /* Bouton commander */
 
@@ -763,3 +803,41 @@ main a {
 
 
 }
+
+@keyframes validation {
+
+    0% {
+        width: 0%;
+        opacity: 0;
+       
+    }
+
+    25% {
+
+        opacity: 1;
+    }
+
+    100% {
+
+        width: 100%;
+       
+    }
+    
+}
+
+@keyframes validation-rotation {
+
+    from {
+
+        visibility: 0;
+        transform : rotate(-90deg);
+    }
+
+    to {
+
+        visibility: 1;
+        transform : rotate(360deg);
+    }
+    
+}
+
