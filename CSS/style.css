@@ -5,7 +5,7 @@
 body {
 
     margin: 0;
-    font-family: 'roboto', sans-serif;
+    font-family: 'roboto', sans-serif;  
 
 }
 
@@ -28,15 +28,48 @@ main a {
 
 /* (((( page index ))) */
 
+/* ((loader)) */
+
+.loader {
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    width: 100%;
+    font-size: 5em;
+    color: #99E2D0;
+    opacity: 0;
+    margin-top: 100px;
+    animation: loader 2s;
+
+}
+
+.body-loader {
+
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%; 
+    animation: body-loader 2s;
+    opacity: 0;
+
+}
+
 /* (( header )) */
 
+.body-index {
 
+    animation: body-index 2s;
+}
 .logo-index {
 
     display: flex;
     justify-content: center;
     padding: 15px;
-    box-shadow: 0px 4px 15px #cbcbcb;
+    z-index: 2;
+    box-shadow: 0px 1px 5px gray;
+    position: relative;
 
 }
 
@@ -50,7 +83,9 @@ main a {
     display: flex;
     justify-content: space-around;
     background-color: #EAEAEA;
-    border-top: solid 1px #cbcbcb;
+    position: absolute;
+    width: 100%;
+
 
 }
 
@@ -69,7 +104,9 @@ main a {
     background-color: #F6F6F6;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 40px;
+    padding-top: 80px;
+    z-index: 2;
+
 
 }
 
@@ -80,6 +117,7 @@ main a {
     font-size: 1.5em;
     font-weight: 900;
     margin: 0;
+
 
 }
 
@@ -100,6 +138,7 @@ main a {
     font-size: 1em;
     font-weight: 300;
     margin: 0;
+
 }
 
 .bouton-explorer {
@@ -211,27 +250,11 @@ main a {
 }
 
 
-
 .texte-bouton-fonctionnement {
 
     font-weight: 700;
     padding-top: 5px;
     padding-left: 25px;
-}
-
-/* ((loader)) */
-
-.loader {
-
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    font-size: 2em;
-    color: #9356DC;
-    opacity: 0;
-    margin-top: 30px;
-    animation: loader 2s;
-
 }
 
 
@@ -242,8 +265,6 @@ main a {
 
     background-color: #F6F6F6;
     margin-top: 50px;
-
-
 }
 
 .titre-section-restaurant {
@@ -262,8 +283,7 @@ main a {
     flex-wrap: wrap;
     justify-content: center;
     padding: 15px;
-    margin-top: -60px;
-    animation: card-restaurant 3s;
+    
 
 }
 
@@ -276,6 +296,7 @@ main a {
     margin-bottom: 15px;
     box-shadow: 0px 4px 15px gray;
 
+
 }
 
 .card-restaurant img {
@@ -284,6 +305,25 @@ main a {
     height: 150px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
+    position: relative;
+    z-index: 2;
+
+
+}
+
+.nouveau {
+
+    position: absolute;
+    z-index: 3;
+    right: 40px;
+    color: #008766;
+    font-weight: 800;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: #99E2D0;
+    border-radius: 3px;
 
 }
 
@@ -314,11 +354,13 @@ main a {
     z-index: 2;
 
 
+
 }
 
 .description-card-restaurant .fa-regular:hover {
 
     opacity: 0;
+
 
 }
 
@@ -339,9 +381,10 @@ main a {
 
     opacity: 1;
     font-size: 1.5em;
-    background: linear-gradient(to bottom,  #9356DC 0%, #FF79DA 100%); 
-    -webkit-background-clip: text;   
+    background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: 1s ease-in-out;
 
 }
 
@@ -568,7 +611,7 @@ main a {
     margin-right: 15px;
 }
 
-/* (((( animation css )))) */
+/* (((( keyframes )))) */
 
 @keyframes loader {
 
@@ -576,34 +619,47 @@ main a {
 
         transform: rotate(0deg);
         opacity: 1;
-
+        z-index: 5;
     }
 
     to {
 
         transform: rotate(360deg);
-        visibility: hidden;
+        opacity: 0;
+        
 
     }
 
 
 }
 
+@keyframes body-loader {
 
-@keyframes card-restaurant {
+    from {
+
+        z-index: 4;
+        background-color: #9356DC;
+        opacity: 1;
+    }
+
+    to {
+
+        z-index: 4;
+        opacity: 0;
+        background: white;
+    }
+}
+
+@keyframes body-index {
 
     from {
 
         opacity: 0;
-        margin-top: 100px;
 
     }
 
     to {
 
-        margin-top: none;
         opacity: 1;
-
     }
-
 }
