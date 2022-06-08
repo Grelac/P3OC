@@ -1,37 +1,240 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
 
-You can use the [editor on GitHub](https://github.com/Grelac/P3OC/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+<head>
+    <!-- (((( Meta )))) -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- (((( link )))) -->
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- (((( title )))) -->
+    <title>oh my food</title>
+</head>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<body>
 
-### Markdown
+    <!-- ((loader)) -->
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    <div class="loader">
+        <i class="fa-solid fa-spinner"></i>
+    </div>
 
-```markdown
-Syntax highlighted code block
+    <div class="body-index">
 
-# Header 1
-## Header 2
-### Header 3
+        <!--(((( header ))) -->
 
-- Bulleted
-- List
+        <header>
 
-1. Numbered
-2. List
+            <!-- (( header logo )) -->
 
-**Bold** and _Italic_ and `Code` text
+            <div class="logo-index">
+                <img src="/Images/logo/ohmyfood.png" alt="Logo de ohmyfood">
+            </div>
 
-[Link](url) and ![Image](src)
-```
+            <!-- (( header localisation )) -->
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+            <div class="localisation">
+                <p><i class="fa-solid fa-location-dot"></i>Paris, Belleville</p>
+            </div>
 
-### Jekyll Themes
+            <!-- (( header présentation )) -->
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Grelac/P3OC/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+            <div class="présentation">
 
-### Support or Contact
+                <div class="texte-présentation">
+                    <div class="titre-présentation">
+                        <p>Réservez le menu qui</p>
+                        <p>vous convient</p>
+                    </div>
+                    <div class="description-présentation">
+                        <p>Découvrez des restaurants d'exception,</p>
+                        <p>séléctionnés par nos soins</p>
+                    </div>
+                </div>
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+                <a class="bouton-explorer">
+                    <p>Explorer nos restaurants</p>
+                </a>
+
+            </div>
+        </header>
+
+        <!-- (((( main )))) -->
+        <main>
+
+            <!-- (( Fonctionnement )) -->
+
+            <div class="titre-fonctionnement">
+                <p>Fonctionnement</p>
+            </div>
+
+            <div class="section-fonctionnement">
+
+                <div class="card-fonctionnement">
+                    <div class="texte-fonctionnement">
+                        <p class="nombre-fonctionnement">1</p>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <div>
+                        <p class="texte-bouton-fonctionnement">Choisissez un restaurant</p>
+                    </div>
+                </div>
+
+                <div class="card-fonctionnement">
+                    <div class="texte-fonctionnement">
+                        <p class="nombre-fonctionnement">2</p>
+                        <i class="fa-solid fa-list-ul"></i>
+                    </div>
+                    <div>
+                        <p class="texte-bouton-fonctionnement">Composez votre menu</p>
+                    </div>
+                </div>
+
+                <div class="card-fonctionnement">
+                    <div class="texte-fonctionnement">
+                        <p class="nombre-fonctionnement">3</p>
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <Div>
+                        <p class="texte-bouton-fonctionnement">Dégustez au restaurant</p>
+                    </Div>
+                </div>
+
+            </div>
+
+            <!-- (( Restaurants )) -->
+
+            <div class="section-restaurant">
+
+                <p class="titre-section-restaurant">Restaurants</p>
+
+                <!-- restaurant : la palette du goût -->
+
+                <div class="cards-restaurants">
+
+                    <a href="/page1lapalettedugout.html" class="card-restaurant">
+
+                        <div>
+                            <p class="nouveau">Nouveau</p>
+                            <img src="/Images/restaurants/lapalettedugoût.jpg" alt="La palette du goût">
+                        </div>
+
+                        <div class="description-card-restaurant">
+                            <div>
+                                <p class="nom-restaurant-card">La palette du goût</p>
+                                <P>Ménilmontant</P>
+                            </div>
+
+                            <div>
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+
+                    </a>
+
+                    <!-- restaurant : la note enchantée -->
+
+                    <a href="/page2lanoteenchantée.html" class="card-restaurant">
+
+                        <div>
+                            <p class="nouveau">Nouveau</p>
+                            <img src="/Images/restaurants/Lanoteenchantée.jpg" alt="La note enchantée">
+                        </div>
+
+                        <div class="description-card-restaurant">
+                            <div>
+                                <p class="nom-restaurant-card">La note enchantée</p>
+                                <P>Charonne</P>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+
+                    </a>
+
+                    <!-- restaurant : à la francaise -->
+
+                    <a href="/page3alafrancaise.html" class="card-restaurant">
+
+                        <div>
+                            <img src="/Images/restaurants/alafrancaise.jpg" alt="à la francaise">
+                        </div>
+
+                        <div class="description-card-restaurant">
+                            <div>
+                                <p class="nom-restaurant-card">À la française</p>
+                                <P>Charonne</P>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+
+                    </a>
+
+                    <!-- restaurant : le délice des sens -->
+
+                    <a href="/page4ledelicedessens.html" class="card-restaurant">
+
+                        <div class="description-card-restaurant">
+                            <img src="/Images/restaurants/ledélicedessens.jpg" alt="Le délice des sens">
+                        </div>
+
+                        <div class="description-card-restaurant">
+                            <div>
+                                <p class="nom-restaurant-card">Le délice des sens</p>
+                                <P>Folie-Méricourt</P>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <!-- (((( Footer )))) -->
+
+        <div class="footer">
+
+            <Div class="logo-titre-footer">
+                <p>ohmyfood</p>
+            </Div>
+
+            <!-- (( footer nav )) -->
+
+            <div class="footer-nav">
+
+                <p><i class="fa-solid fa-utensils"></i> Proposer un restaurant</p>
+                <p><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</p>
+                <p>Mentions légales</p>
+                <p><a href="mailto:email@exemple.com">contact</a></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
