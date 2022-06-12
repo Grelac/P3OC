@@ -556,21 +556,36 @@ main a {
 }
 
 .card-menu-restaurant p {
-    
+
     margin: 5px;
     width: 270px;
     white-space: nowrap;
-      
+
 }
 
+@media (max-width: 400px) {
+
+
+    .card-menu-restaurant .p-trop-long {
+
+        width: 260px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+    }
+
+}
+
+
 .card-menu-restaurant:hover p {
-    
+
     margin: 5px;
     width: 240px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-  
+
 }
 
 .titre-plat {
@@ -610,13 +625,13 @@ main a {
     color: white;
     font-size: 1.8em;
     margin-top: 18px;
-    
+
 }
 
 .card-menu-restaurant:hover .validation {
- 
+
     animation: validation-rotation 1s;
-    
+
 }
 
 /* Bouton commander */
@@ -801,14 +816,14 @@ main a {
 @keyframes validation-rotation {
 
     from {
-        
+
         visibility: hidden;
         transform: rotate(-90deg);
     }
 
     to {
 
-        
+
         visibility: visible;
         transform: rotate(360deg);
     }
@@ -930,13 +945,12 @@ main a {
         display: flex;
         justify-content: center;
         gap: 5%
-
     }
 
     .menu {
 
         gap: 100%;
-        
+
     }
 
 }
